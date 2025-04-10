@@ -143,30 +143,35 @@
             margin-bottom: 10px;
         }
 
-        .product-card p {
-            color: #555555;
-            margin-bottom: 15px;
-        }
+        .product-card {
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center-align content horizontally */
+    justify-content: space-between; /* Distribute content evenly */
+    text-align: center; /* Center-align text */
+}
 
-        .product-card a {
-            display: inline-block; 
-            text-decoration: none;
-            color: white;
-            background-color: #ff4c4c;
-            padding: 15px 25px; 
-            border-radius: 5px;
-            font-size: 1rem; 
-            margin-top: 10px; 
-        }
+/* Ensure the button is centered and responsive */
+.product-card a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color: #ff4c4c;
+    padding: 15px 25px;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-top: 10px;
+    text-align: center; /* Center-align button text */
+}
 
-        @media (max-width: 768px) {
-            .product-card a {
-                font-size: 1.4rem;
-                padding: 20px 30px;
-                width: 100%; 
-                text-align: center; 
-            }
-        }
+/* Mobile-specific adjustments */
+@media (max-width: 768px) {
+    .product-card a {
+        font-size: 1.2rem; /* Slightly larger font for mobile */
+        padding: 20px 30px; /* Increase padding for touch-friendly buttons */
+        width: 100%; /* Make the button span the full width of the card */
+    }
+}
 
         .product-card:hover {
             transform: scale(1.05);
