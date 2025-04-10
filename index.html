@@ -149,11 +149,23 @@
         }
 
         .product-card a {
+            display: inline-block; 
             text-decoration: none;
             color: white;
             background-color: #ff4c4c;
-            padding: 10px 20px;
+            padding: 15px 25px; 
             border-radius: 5px;
+            font-size: 1rem; 
+            margin-top: 10px; 
+        }
+
+        @media (max-width: 768px) {
+            .product-card a {
+                font-size: 1.4rem;
+                padding: 20px 30px;
+                width: 80%; 
+                text-align: center; 
+            }
         }
 
         .product-card:hover {
