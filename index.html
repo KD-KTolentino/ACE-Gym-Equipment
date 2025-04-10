@@ -143,35 +143,30 @@
             margin-bottom: 10px;
         }
 
-        .product-card {
-    display: flex;
-    flex-direction: column; /* Stack content vertically */
-    align-items: center; /* Center-align content horizontally */
-    justify-content: space-between; /* Distribute content evenly */
-    text-align: center; /* Center-align text */
-}
+        .product-card p {
+            color: #555555;
+            margin-bottom: 15px;
+        }
 
-/* Ensure the button is centered and responsive */
-.product-card a {
-    display: inline-block;
-    text-decoration: none;
-    color: white;
-    background-color: #ff4c4c;
-    padding: 15px 25px;
-    border-radius: 5px;
-    font-size: 1rem;
-    margin-top: 10px;
-    text-align: center; /* Center-align button text */
-}
+        .product-card a {
+            display: inline-block; 
+            text-decoration: none;
+            color: white;
+            background-color: #ff4c4c;
+            padding: 15px 25px; 
+            border-radius: 5px;
+            font-size: 1rem; 
+            margin-top: 10px; 
+        }
 
-/* Mobile-specific adjustments */
-@media (max-width: 768px) {
-    .product-card a {
-        font-size: 1.2rem; /* Slightly larger font for mobile */
-        padding: 20px 30px; /* Increase padding for touch-friendly buttons */
-        width: 100%; /* Make the button span the full width of the card */
-    }
-}
+        @media (max-width: 768px) {
+            .product-card a {
+                font-size: 1.4rem;
+                padding: 20px 40px;
+                width: 100%; 
+                text-align: center; 
+            }
+        }
 
         .product-card:hover {
             transform: scale(1.05);
@@ -292,21 +287,21 @@
                 <img src="images/dumbbellnobg.png" alt="Dumbbell">
                 <h3>Dumbbell</h3>
                 <p>Adjustable weight dumbbell.</p>
-                <a href="products.html">View More</a>
+                <a href="products.html">More</a>
             </div>
           
             <div class="product-card">
                 <img src="images/bikenobg.png" alt="Resistance Band">
                 <h3>Resistance Band</h3>
                 <p>Elite stationary exercise bike.</p>
-                <a href="products.html">View More</a>
+                <a href="products.html">More</a>
             </div>
             
             <div class="product-card">
                 <img src="images/treadmillnobg.png" alt="Treadmill">
                 <h3>Treadmill</h3>
                 <p>High-performance treadmill.</p>
-                <a href="products.html">View More</a>
+                <a href="products.html">More</a>
             </div>
         </div>
     </div>
